@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./appareil.component.scss']
 })
 export class AppareilComponent implements OnInit {
-  
+
   @Input() appareilName: string;
   @Input() appareilStatus: string;
 
@@ -18,7 +18,7 @@ export class AppareilComponent implements OnInit {
   getStatus(){
     return this.appareilStatus;
   }
-  
+
   getColor(){
       if(this.appareilStatus === 'allumé') {
         return 'green';
