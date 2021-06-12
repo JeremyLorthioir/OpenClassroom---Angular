@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row {{ getClassByStatus() }}">
+    <div class="col-sm-8">
+      <h3 class="card-header">{{ postTitle }}</h3>
+    </div>
+    <div class="col-sm-4" style="color: grey; font-size: 18px">
+      <h4>{{ postDate | date: "medium" }}</h4>
+    </div>
+    <div>
+      <p>{{ postContent }}</p>
+      <a href="#" (click)="likePost()" class="btn btn-success">Like</a>
+      <a href="#" (click)="unlikePost()"  class="btn btn-danger">Unlike</a>
+    </div>
+  </div>
+</div>
